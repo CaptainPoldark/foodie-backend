@@ -9,7 +9,7 @@ COPY package*.json ./
 # Install production dependencies.
 RUN yarn
 # Copy local code to the container image.
-COPY ./ 
+COPY . ./
 # Build Strapi
 RUN npm yarn build
 # Run the web service on container startup.
