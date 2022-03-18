@@ -1,4 +1,4 @@
-FROM  strapi/base:14
+FROM  strapi/strapi
 
 # Set Environment to Production Environment (Optional to include in Dockerfile)
 
@@ -6,7 +6,7 @@ ENV NODE_ENV production
 
 # Set up working directory that will be used to copy files/directories below :
 
-WORKDIR /app
+WORKDIR /backend-container
 
 # Copy package.json to root directory inside Docker container of Strapi app
 
@@ -58,4 +58,4 @@ EXPOSE 1337
 
 # The following command will execute “yarn start”.
 
-CMD [“yarn”, “start”]
+CMD [“yarn develop”]
