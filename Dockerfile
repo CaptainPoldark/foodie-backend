@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM strapi/base:14-alpine
 # Create and change to the app directory.
 WORKDIR /usr/src/app
 ENV NODE_ENV=production
@@ -13,4 +13,4 @@ COPY . ./
 # Build Strapi
 RUN npm run build
 # Run the web service on container startup.
-CMD [ "yarn", "start" ]
+RUN yarn start
