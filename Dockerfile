@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:14-alpine
 # Create and change to the app directory.
 WORKDIR /usr/src/app
 ENV NODE_ENV=production
@@ -7,7 +7,7 @@ ENV NODE_ENV=production
 # Copying this separately prevents re-running npm install on every code change.
 COPY package*.json ./
 # Install production dependencies.
-RUN npm install --only=production
+RUN npm install 
 # Copy local code to the container image.
 COPY . ./
 # Build Strapi
