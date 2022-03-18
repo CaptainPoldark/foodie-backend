@@ -13,4 +13,4 @@ COPY . ./
 # Build Strapi
 RUN yarn build
 # Run the web service on container startup.
-RUN npm start
+CMD ["npm", "start"]
