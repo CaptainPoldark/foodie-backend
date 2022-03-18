@@ -68,9 +68,7 @@ package-lock.json
 
 .tmp
 *.log
-*.sql
-*.sqlite
-*.sqlite3
+
 
 
 ############################
@@ -82,7 +80,7 @@ ssl
 .idea
 nbproject
 
-!public/uploads/.gitkeep
+
 
 ############################
 # Node.js
