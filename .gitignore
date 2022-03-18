@@ -81,7 +81,7 @@ package-lock.json
 ssl
 .idea
 nbproject
-public/uploads/*
+
 !public/uploads/.gitkeep
 
 ############################
