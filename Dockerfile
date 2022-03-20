@@ -11,6 +11,6 @@ RUN npm install
 # Copy local code to the container image.
 COPY . ./
 # Build Strapi
-
+RUN yarn build
 # Run the web service on container startup.
-RUN yarn develop
+CMD ["yarn","develop"]

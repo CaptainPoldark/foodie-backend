@@ -1,4 +1,5 @@
 module.exports = ({ env }) => ({
-  url: env('WEBSITE_URL'),
+  host: env("HOST", "0.0.0.0"),
+  url: env("https://foodiedb.battlegroundls.com"),
   port: process.env.PORT,
 });
